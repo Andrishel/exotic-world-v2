@@ -1,0 +1,11 @@
+{
+  "price": 12,
+  "nombre": "Tarántula Rosa",
+  "origen": "Chile",
+  "descripcion": "Movimientos lentos",
+  "categoria": "Arácnidos",
+  "imagen": "/img/uploads/img_9631.webp",
+  "schedule": "Martes-Sábado 3pm-6pm",
+  "nombreCientifico": "Grammostola rosea",
+  "cuidadosBasicos": "Humedad moderada"
+}

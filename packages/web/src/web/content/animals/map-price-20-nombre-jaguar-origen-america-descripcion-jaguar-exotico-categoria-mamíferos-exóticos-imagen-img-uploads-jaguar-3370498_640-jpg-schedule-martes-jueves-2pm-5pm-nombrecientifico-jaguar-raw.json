@@ -1,0 +1,11 @@
+{
+  "price": 20,
+  "nombre": "Jaguar v1",
+  "origen": "America",
+  "descripcion": "Jaguar exotico",
+  "categoria": "Mamíferos Exóticos",
+  "imagen": "/img/uploads/jaguar-3370498_640.jpg",
+  "schedule": "Martes - Jueves ( 2pm - 5pm )",
+  "nombreCientifico": "Jaguar rawr",
+  "cuidadosBasicos": "El jaguar es un carnívoro estricto. Su dieta debe ser equilibrada para prevenir enfermedades metabólicas.\n\nVariedad de carne: Se debe ofrecer una mezcla de carne de res, caballo, pollo y, ocasionalmente, pescado.\nPresas enteras: El suministro de presas con pelo, plumas y huesos (como conejos o codornices) es vital para la salud dental, el tracto digestivo y la estimulación psicológica."
+}

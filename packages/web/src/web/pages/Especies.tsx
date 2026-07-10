@@ -1,15 +1,24 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Filter } from "lucide-react";
-import { especies, categorias } from "../data/mockDatabase";
+import { categorias } from "../data/mockDatabase";
+import { getLocalAnimals } from "../services/contentLoader";
+import { Especie } from "../data/mockDatabase";
 import { AnimalCard } from "../components/AnimalCard";
+import { Catalog } from "../components/Catalog";
 
 export default function Especies() {
   const [categoriaActiva, setCategoriaActiva] = useState("Todos");
+  const [animalesCMS, setAnimalesCMS] = useState<Especie[]>([]);
+
+  // Cargamos los datos del CMS al montar el componente
+  useEffect(() => {
+    setAnimalesCMS(getLocalAnimals());
+  }, []);
 
   const especiesFiltradas = useMemo(() => {
-    if (categoriaActiva === "Todos") return especies;
-    return especies.filter((e) => e.categoria === categoriaActiva);
-  }, [categoriaActiva]);
+    if (categoriaActiva === "Todos") return animalesCMS;
+    return animalesCMS.filter((e) => e.categoria === categoriaActiva);
+  }, [categoriaActiva, animalesCMS]);
 
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-6 py-16">
@@ -47,10 +56,15 @@ export default function Especies() {
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {especiesFiltradas.map((animal) => (
-            <AnimalCard key={animal.id} animal={animal} />
+             /* Aquí usamos tu AnimalCard original */
+             <AnimalCard key={animal.id} animal={animal} />
           ))}
         </div>
       )}
+      
+      {/* Mantenemos Catalog fuera si necesitas que maneje el modal global, 
+          o simplemente aseguramos que AnimalCard tenga la lógica del modal */}
+      {categoriaActiva === "Todos" && <Catalog />}
     </div>
   );
 }

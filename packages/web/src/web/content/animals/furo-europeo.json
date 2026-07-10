@@ -1,0 +1,11 @@
+{
+  "price": 20,
+  "nombre": "Hurón",
+  "origen": "Europa",
+  "descripcion": "Juguetón y activo",
+  "categoria": "Mamíferos Exóticos",
+  "imagen": "/img/uploads/albino-ferrets-7429773_640.jpg",
+  "schedule": "Miércoles-Domingo 11am-5pm",
+  "nombreCientifico": "Mustela furo",
+  "cuidadosBasicos": "Dieta alta en proteína"
+}

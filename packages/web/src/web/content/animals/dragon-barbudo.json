@@ -1,0 +1,11 @@
+{
+  "price": 25,
+  "nombre": "Dragón Barbudo",
+  "origen": "Australia",
+  "descripcion": "Dócil y tranquilo",
+  "categoria": "Reptiles",
+  "imagen": "/img/uploads/dragon_barbudo.jpg",
+  "schedule": "Sábado-Domingo 9am-6pm",
+  "nombreCientifico": "Pogona vitticeps",
+  "cuidadosBasicos": "Calor UVB y vegetales"
+}

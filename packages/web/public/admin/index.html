@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Administración - Exotic World</title>
+  
+  <!-- Tipografía limpia e idéntica a la de tu web (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Variables exactas de tu diseño web */
+    :root {
+      --cream-bg: #fdfcfa;
+      --dark-green: #1e3f20;
+      --primary-green: #15803d;
+      --light-green: #dcfce7;
+      --border-gray: #e5e7eb;
+      --text-gray: #4b5563;
+    }
+
+    /* 1. Globales: Fuente y Fondo General */
+    * {
+      font-family: 'Inter', system-ui, sans-serif !important;
+    }
+    body, div[class*="AppMainContainer"] {
+      background-color: var(--cream-bg) !important;
+    }
+
+    /* 2. Cabecera (Header): Limpia, fondo crema y sin fondos azules raros */
+    div[class*="AppHeader-appHeader"] {
+      background-color: var(--cream-bg) !important;
+      border-bottom: 1px solid var(--border-gray) !important;
+      box-shadow: none !important;
+    }
+    h1[class*="AppHeader-title"], a[class*="AppHeader-button"] {
+      color: var(--dark-green) !important;
+    }
+
+    /* 3. Panel Lateral (Sidebar): Botones estilo "Filtro" */
+    div[class*="SidebarContainer"] {
+      background-color: transparent !important;
+      border-right: 1px solid var(--border-gray) !important;
+    }
+    h2[class*="SidebarHeading"] {
+      color: var(--dark-green) !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.05em;
+    }
+    a[class*="SidebarLink"] {
+      border-radius: 9999px !important; /* Forma de píldora */
+      margin: 4px 12px !important;
+      padding: 8px 16px !important;
+      color: var(--text-gray) !important;
+      transition: all 0.2s ease !important;
+    }
+    a[class*="SidebarLink"]:hover {
+      background-color: white !important;
+      border: 1px solid var(--border-gray) !important;
+      color: var(--dark-green) !important;
+    }
+    /* El botón activo del menú (Igual al filtro "Todos") */
+    a[class*="SidebarLink-active"], a[class*="SidebarLink-active"]:hover {
+      background-color: var(--primary-green) !important;
+      color: white !important;
+      border-left: none !important;
+      border: 1px solid var(--primary-green) !important;
+      font-weight: 500 !important;
+    }
+
+    /* 4. Títulos Principales */
+    h1[class*="CollectionHeading"], h2[class*="Heading"] {
+      color: var(--dark-green) !important;
+      font-weight: 800 !important;
+    }
+
+    /* 5. TARJETAS DE ANIMALES (La magia visual) */
+    a[class*="Card-card"] {
+      background-color: white !important;
+      border: 1px solid var(--border-gray) !important;
+      border-radius: 16px !important; /* Mismo borde de tus cards */
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+      overflow: hidden !important;
+      transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+      padding-top: 0 !important; /* Para que la imagen toque el borde superior */
+    }
+    a[class*="Card-card"]:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+      border-color: var(--primary-green) !important;
+    }
+    
+    /* Textos dentro de la tarjeta */
+    h2[class*="CardHeading"] {
+      color: var(--dark-green) !important;
+      font-weight: 700 !important;
+      padding: 0 16px !important;
+      margin-top: 12px !important;
+    }
+    /* Expandir la imagen dentro de la tarjeta */
+    div[class*="CardImageWrapper"], div[class*="CardImage"] {
+      border-radius: 16px 16px 0 0 !important;
+      margin: 0 0 12px 0 !important;
+      width: 100% !important;
+      border-bottom: 1px solid var(--border-gray) !important;
+    }
+
+    /* 6. Botones de Acción Generales */
+    button[class*="Button"] {
+      border-radius: 9999px !important; /* Forma de píldora */
+      font-weight: 600 !important;
+      padding: 8px 24px !important;
+      text-transform: none !important;
+      letter-spacing: normal !important;
+    }
+    /* Botón Principal (Ej. Nuevo Animal, Guardar) */
+    button[class*="Button-button-default-primary"], 
+    button[class*="Button-button-default-success"] {
+      background-color: var(--primary-green) !important;
+      color: white !important;
+    }
+    button[class*="Button-button-default-primary"]:hover,
+    button[class*="Button-button-default-success"]:hover {
+      background-color: var(--dark-green) !important;
+    }
+
+    /* 7. Área de Edición (Inputs limpios) */
+    div[class*="ToolbarContainer"] {
+      background-color: var(--cream-bg) !important;
+    }
+    input[class*="Control"], textarea[class*="Control"], select[class*="Control"] {
+      border-radius: 12px !important;
+      border: 1px solid var(--border-gray) !important;
+      background-color: white !important;
+      color: var(--dark-green) !important;
+      padding: 12px !important;
+    }
+    input[class*="Control"]:focus, textarea[class*="Control"]:focus {
+      border-color: var(--primary-green) !important;
+      box-shadow: 0 0 0 3px var(--light-green) !important;
+      outline: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Script Core de Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>

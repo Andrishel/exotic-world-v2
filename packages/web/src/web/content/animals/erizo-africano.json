@@ -1,0 +1,11 @@
+{
+  "price": 15,
+  "nombre": "Erizo Africano",
+  "origen": "África",
+  "descripcion": "Pequeño y nocturno",
+  "categoria": "Mamíferos Exóticos",
+  "imagen": "/img/uploads/evakerrigan210300012.jpg",
+  "schedule": "Lunes-Viernes 10am-4pm",
+  "nombreCientifico": "Atelerix albiventris",
+  "cuidadosBasicos": "Dieta insectívora"
+}

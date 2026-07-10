@@ -20,12 +20,14 @@
     "db:migrate": "turbo db:migrate",
     "db:push": "turbo db:push",
     "db:studio": "turbo db:studio",
-    "kill:port": "lsof -t -i :${PORT:-4200} | xargs kill -9"
+    "kill:port": "lsof -t -i :${PORT:-4200} | xargs kill -9",
+    "cms-proxy": "netlify-cms-proxy-server"
   },
   "devDependencies": {
     "@tursodatabase/api": "^1.9.2",
     "@types/bun": "1.3.14",
     "@types/semver": "^7.7.1",
+    "netlify-cms-proxy-server": "^1.3.24",
     "oxfmt": "0.54.0",
     "oxlint": "1.69.0",
     "semver": "^7.7.2",

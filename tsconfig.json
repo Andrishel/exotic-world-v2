@@ -25,5 +25,10 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false
-  }
+  },
+  "exclude": [
+  "**/node_modules",
+  "**/dist",
+  "packages/web/src/web/content/animals/*.json"
+]
 }

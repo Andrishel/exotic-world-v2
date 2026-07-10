@@ -1,0 +1,11 @@
+{
+  "price": 22,
+  "nombre": "Serpiente Maíz",
+  "origen": "EE.UU.",
+  "descripcion": "Ofidio no venenoso",
+  "categoria": "Reptiles",
+  "imagen": "/img/uploads/d5b6429ac3a74892160e2bf3183826c1.jpg",
+  "schedule": "Lunes-Domingo 10am-7pm",
+  "nombreCientifico": "Pantherophis guttatus",
+  "cuidadosBasicos": "Roedores pequeños"
+}

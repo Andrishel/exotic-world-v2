@@ -1,0 +1,11 @@
+{
+  "price": 20,
+  "nombre": "Rana Dardo",
+  "origen": "Selva Amazónica",
+  "descripcion": "Muy colorida",
+  "categoria": "Reptiles",
+  "imagen": "/img/uploads/istockphoto-1291710005-612x612.jpg",
+  "schedule": "Martes-Domingo 9am-4pm",
+  "nombreCientifico": "Dendrobatidae",
+  "cuidadosBasicos": "Micro-insectos"
+}

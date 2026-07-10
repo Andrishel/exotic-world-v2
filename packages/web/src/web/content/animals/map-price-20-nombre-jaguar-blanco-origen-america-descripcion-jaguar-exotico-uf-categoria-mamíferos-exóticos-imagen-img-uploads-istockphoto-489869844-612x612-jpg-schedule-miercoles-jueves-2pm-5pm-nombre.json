@@ -1,0 +1,11 @@
+{
+  "price": 20,
+  "nombre": "Jaguar Blanco",
+  "origen": "America",
+  "descripcion": "Jaguar exotico uf",
+  "categoria": "Mamíferos Exóticos",
+  "imagen": "/img/uploads/istockphoto-489869844-612x612.jpg",
+  "schedule": "Miercoles - Jueves ( 2pm - 5pm )",
+  "nombreCientifico": "Jaguar rowr",
+  "cuidadosBasicos": "El jaguar es un carnívoro estricto. Su dieta debe ser equilibrada para prevenir enfermedades metabólicas.\n\n"
+}

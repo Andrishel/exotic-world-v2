@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MapPin, Phone, Clock, Send, CheckCircle2 } from "lucide-react";
-import { infoContacto } from "../data/mockDatabase";
+import { infoContacto } from "../data/mockDatabase"; 
 
 export default function Contacto() {
   const [enviado, setEnviado] = useState(false);

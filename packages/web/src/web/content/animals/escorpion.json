@@ -1,0 +1,11 @@
+{
+  "price": 15,
+  "nombre": "Escorpión Emperador",
+  "origen": "África",
+  "descripcion": "Imponente y serio",
+  "categoria": "Arácnidos",
+  "imagen": "/img/uploads/escorpion-emperador-mano.jpg",
+  "schedule": "Lunes-Viernes 2pm-7pm",
+  "nombreCientifico": "Pandinus imperator",
+  "cuidadosBasicos": "Humedad y oscuridad"
+}

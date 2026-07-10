@@ -1,0 +1,11 @@
+{
+  "price": 20,
+  "nombre": "Jaguar wep",
+  "origen": "América",
+  "descripcion": "Gran felino de selva",
+  "categoria": "Mamíferos Exóticos",
+  "imagen": "/img/uploads/360_f_1438709419_b2yyotl5seldfdcnx5cmg3l353kfbdiv.webp",
+  "schedule": "Martes-Jueves 2pm-5pm",
+  "nombreCientifico": "Panthera onca",
+  "cuidadosBasicos": "Carne fresca"
+}

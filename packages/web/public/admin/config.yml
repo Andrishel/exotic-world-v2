@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "packages/web/public/img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "animals"
+    label: "Animales del Centro"
+    folder: "packages/web/src/web/content/animals"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Nombre Científico", name: "nombreCientifico", widget: "string" }
+      - { label: "Categoría", name: "categoria", widget: "select", options: ["Mamíferos Exóticos", "Reptiles", "Arácnidos"] }
+      - { label: "Descripción", name: "descripcion", widget: "text" }
+      - { label: "Cuidados Básicos", name: "cuidadosBasicos", widget: "text" }
+      - { label: "Origen", name: "origen", widget: "string" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Horario de Exhibición", name: "schedule", widget: "string" }
+      - { label: "Tarifa de Entrada (S/.)", name: "price", widget: "number", value_type: "float" }

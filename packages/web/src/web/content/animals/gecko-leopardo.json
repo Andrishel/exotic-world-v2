@@ -1,0 +1,11 @@
+{
+  "price": 18,
+  "nombre": "Gecko Leopardo",
+  "origen": "Asia",
+  "descripcion": "Tranquilo y colorido",
+  "categoria": "Reptiles",
+  "imagen": "/img/uploads/gecko-leopardo-raptor-foto.jpg",
+  "schedule": "Martes-Domingo 2pm-8pm",
+  "nombreCientifico": "Eublepharis macularius",
+  "cuidadosBasicos": "Insectos vivos"
+}

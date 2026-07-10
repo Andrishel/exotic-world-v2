@@ -1,0 +1,11 @@
+{
+  "price": 30,
+  "nombre": "Camaleón",
+  "origen": "Madagascar",
+  "descripcion": "Cambia de color",
+  "categoria": "Reptiles",
+  "imagen": "/img/uploads/chameleon-pictures-yu5a4y13nke0yt5m.jpg",
+  "schedule": "Martes-Domingo 10am-5pm",
+  "nombreCientifico": "Chamaeleonidae",
+  "cuidadosBasicos": "Insectos y hojas"
+}
