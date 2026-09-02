@@ -130,8 +130,8 @@ export const experiencias: Experiencia[] = [
 
 export const infoContacto: InfoContacto = {
   direccion: "Las Acacias 175, Piura 20001",
-  telefono: "944 395 712",
-  telefonoWhatsapp: "51944395712",
+  telefono: "954426824",
+  telefonoWhatsapp: "51954426824",
   horarios: [
     { dias: "Martes a Domingo", horas: "10:00 a.m. – 2:00 p.m." },
     { dias: "Martes a Domingo", horas: "4:00 p.m. – 8:00 p.m." },
